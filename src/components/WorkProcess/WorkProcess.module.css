@@ -1,0 +1,178 @@
+.WorkProcess {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    direction: rtl;
+}
+
+.text {
+    position: absolute;
+    color: #38281a;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: Rubik-Regular;
+    line-height: 2;
+    white-space: break-spaces;
+    z-index: 1;
+}
+
+.title {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-family: Rubik-Light;
+    color: #e0a86f;
+}
+
+/* .text0 {
+    top: 33%;
+    left: 60%;
+}
+
+.text1 {
+    top: 59%;
+    left: 13%;
+} */
+
+@media screen and (min-width: 1150px) and (max-width: 1500px) {
+    .text0 {
+        top: 33%;
+        left: 60%;
+    }
+    
+    .text1 {
+        top: 59%;
+        left: 13%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .text0 {
+        top: 31%;
+        left: 65%;
+    }
+    
+    .text1 {
+        top: 59%;
+        left: 18%;
+    }
+}
+
+.table0 {
+    position: absolute;
+    top: 38.5%;
+    left: 65%;
+    width: 20%;
+}
+
+.table1 {
+    position: absolute;
+    top: 66%;
+    left: 10%;
+    width: 30%;
+}
+
+.candle0 {
+    position: absolute;
+    top: 36%;
+    left: 87%;
+    width: 5.5%;
+}
+
+.candle1 {
+    position: absolute;
+    top: 66%;
+    left: 10%;
+    width: 5.5%;
+}
+
+.openPage0 {
+    animation: openPageAni0 3s forwards;
+}
+.openPage1 {
+    animation: openPageAni1 3s forwards;
+}
+
+@keyframes openPageAni0 {
+    0% {
+        mask-size: 0% 0%;
+        mask-position: 85% 40%;
+
+        background-size: 0% 0%;
+        background-position: 85% 40%;
+    }
+    30% {
+        mask-position: 90% 40%;
+        background-position: 90% 40%;
+    }
+    100% {
+        mask-size: 60% 50%;
+        mask-position: 110% 30%;
+
+        background-size: 80% 60%;
+        background-position: 175% 25%;
+    }
+}
+@keyframes openPageAni1 {
+    0% {
+        mask-size: 0% 0%;
+        mask-position: 10% 75%;
+
+        background-size: 0% 0%;
+        background-position: 10% 75%;
+    }
+    30% {
+        mask-position: 0% 75%;
+        background-position: 0% 75%;
+    }
+    100% {
+        mask-size: 60% 50%;
+        mask-position: -10% 80%;
+
+        background-size: 80% 60%;
+        background-position: -75% 90%;
+    }
+}
+
+.closePage0 {
+    animation: closePageAni0 3s forwards;
+}
+.closePage1 {
+    animation: closePageAni1 3s forwards;
+}
+
+@keyframes closePageAni0 {
+    0% {
+        mask-size: 60% 50%;
+        mask-position: 110% 30%;
+
+        background-size: 80% 60%;
+        background-position: 175% 25%;
+    }
+    100% {
+        mask-size: 0% 0%;
+        mask-position: 85% 40%;
+
+        background-size: 0% 0%;
+        background-position: 85% 40%;
+    }
+}
+@keyframes closePageAni1 {
+    0% {
+        mask-size: 60% 50%;
+        mask-position: -10% 80%;
+
+        background-size: 80% 60%;
+        background-position: -75% 90%;
+    }
+    100% {
+        mask-size: 0% 0%;
+        mask-position: 10% 75%;
+
+        background-size: 0% 0%;
+        background-position: 10% 75%;
+    }
+}

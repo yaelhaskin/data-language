@@ -1,0 +1,38 @@
+
+.arrowsContainer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.arrow {
+    background-image: url(../../assets/images/SVG/arrow.svg);
+    background-repeat: no-repeat;
+    width: 12%;
+    height: 35px;
+    margin: 30px;
+    padding-left: 30px;
+    
+    display: flex;
+    align-items: center;
+    
+    color: white;
+    font-size: 1.5rem;
+    font-family: Rubik-Light;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.back {
+    transform: rotate(180deg);
+}
+
+.back > * {
+    transform: rotate(180deg);
+}

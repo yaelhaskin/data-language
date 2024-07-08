@@ -1,0 +1,690 @@
+/* 
+0: none
+1: big 
+2: short terms 1
+3: short terms 2
+4: variable types candles
+
+6: variable level
+7: baskets
+8: work process
+*/
+
+.Background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(../../assets/images/SVG/plain-background.svg);
+}
+
+.mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    mask-image: radial-gradient(ellipse , rgba(219, 159, 99, 0.858) 30%, rgba(0, 0, 0, 0) 60%);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+}
+
+.gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse , rgba(219, 159, 99, 0.858) 30%, rgba(0, 0, 0, 0) 40%);
+    background-repeat: no-repeat;
+}
+
+/* 1 */
+.maskPage1Index0, 
+.maskPage4Index0, 
+.maskPage5Index0, 
+.maskPage6Index0, 
+.maskPage7Index0, 
+.maskPage10Index0, 
+.maskPage17Index0, 
+.maskPage19Index0, 
+.maskPage21Index0, 
+.maskPage22Index0, 
+.maskPage23Index0, 
+.maskPage25Index0, 
+.maskPage28Index0, 
+.maskPage29Index0, 
+.maskPage30Index0, 
+.maskPage31Index0 
+{
+    mask-size: 180% 160%;
+    mask-position: 50% 50%;
+}
+.gradientPage1Index0, 
+.gradientPage4Index0, 
+.gradientPage5Index0, 
+.gradientPage6Index0, 
+.gradientPage7Index0, 
+.gradientPage10Index0, 
+.gradientPage17Index0, 
+.gradientPage19Index0, 
+.gradientPage21Index0, 
+.gradientPage22Index0, 
+.gradientPage23Index0, 
+.gradientPage25Index0, 
+.gradientPage28Index0, 
+.gradientPage29Index0, 
+.gradientPage30Index0, 
+.gradientPage31Index0 
+{
+    background-size: 180% 160%;
+    background-position: 50% 50%;
+}
+
+.openAni1Index0 {
+    animation: openAni1 2s forwards;
+}
+.closeAni1Index0 {
+    animation: closeAni1 2s forwards;
+}
+
+@keyframes openAni1 {
+    0% {
+        mask-size: 0% 0%;
+        mask-position: 50% 50%;
+
+        background-size: 0% 0%;
+        background-position: 50% 50%;
+    }
+    100% {
+        mask-size: 170% 150%;
+        mask-position: 50% 50%;
+
+        background-size: 170% 150%;
+        background-position: 50% 50%;
+    }
+}
+@keyframes closeAni1 {
+    0% {
+        mask-size: 170% 150%;
+        mask-position: 50% 50%;
+
+        background-size: 170% 150%;
+        background-position: 50% 50%;
+    }
+    100% {
+        mask-size: 0% 0%;
+        mask-position: 50% 50%;
+
+        background-size: 0% 0%;
+        background-position: 50% 50%;
+    }
+}
+
+/* 2 */
+
+.maskPage2Index0 
+{
+    mask-size: 45% 70%;
+    mask-position: 85% -35%;
+}
+.gradientPage2Index0 
+{
+    background-size: 45% 70%;
+    background-position: 85% -35%;
+}
+.maskPage2Index1 
+{
+    mask-size: 65% 60%;
+    mask-position: -22% 50%;
+}
+.gradientPage2Index1 
+{
+    background-size: 65% 60%;
+    background-position: -22% 50%;
+}
+.maskPage2Index2 
+{
+    mask-size: 60% 50%;
+    mask-position: 100% 90%;
+}
+.gradientPage2Index2 
+{
+    background-size: 60% 50%;
+    background-position: 100% 90%;
+}
+
+.openAni2Index0 {
+    animation: openPage2Ani0 2s forwards;
+}
+.openAni2Index1 {
+    animation: openPage2Ani1 2s forwards;
+}
+.openAni2Index2 {
+    animation: openPage2Ani2 2s forwards;
+}
+.closeAni2Index0 {
+    animation: closePageAni0 2s forwards;
+}
+.closeAni2Index1 {
+    animation: closePageAni1 2s forwards;
+}
+.closeAni2Index2 {
+    animation: closePageAni2 2s forwards;
+}
+
+@keyframes openPage2Ani0 {
+    0% {
+        mask-size: 0% 0%;
+        mask-position: 70% 44%;
+
+        background-size: 0% 0%;
+        background-position: 70% 44%;
+    }
+    100% {
+        mask-size: 45% 70%;
+        mask-position: 85% -35%;
+
+        background-size: 45% 70%;
+        background-position: 85% -35%;
+    }
+}
+@keyframes openPage2Ani1 {
+    0% {
+        mask-size: 0% 0%;
+        mask-position: 23% 57%;
+
+        background-size: 0% 0%;
+        background-position: 23% 57%;
+    }
+    100% {
+        mask-size: 65% 60%;
+        mask-position: -22% 50%;
+
+        background-size: 65% 60%;
+        background-position: -22% 50%;
+    }
+}
+@keyframes openPage2Ani2 {
+    0% {
+        mask-size: 0% 0%;
+        mask-position: 71% 76%;
+
+        background-size: 0% 0%;
+        background-position: 71% 76%;
+    }
+    100% {
+        mask-size: 60% 50%;
+        mask-position: 100% 90%;
+
+        background-size: 60% 50%;
+        background-position: 100% 90%;
+    }
+}
+@keyframes closePageAni0 {
+    0% {
+        mask-size: 45% 70%;
+        mask-position: 85% -35%;
+
+        background-size: 45% 70%;
+        background-position: 85% -35%;
+    }
+    100% {
+        mask-size: 0% 0%;
+        mask-position: 70% 44%;
+
+        background-size: 0% 0%;
+        background-position: 70% 44%;
+    }
+}
+@keyframes closePageAni1 {
+    0% {
+        mask-size: 65% 60%;
+        mask-position: -22% 50%;
+
+        background-size: 65% 60%;
+        background-position: -22% 50%;
+    }
+    100% {
+        mask-size: 0% 0%;
+        mask-position: 23% 57%;
+
+        background-size: 0% 0%;
+        background-position: 23% 57%;
+    }
+}
+@keyframes closePageAni2 {
+    0% {
+        mask-size: 60% 50%;
+        mask-position: 100% 90%;
+
+        background-size: 60% 50%;
+        background-position: 100% 90%;
+    }
+    100% {
+        mask-size: 0% 0%;
+        mask-position: 71% 76%;
+
+        background-size: 0% 0%;
+        background-position: 71% 76%;
+    }
+}
+
+/* 3 */
+.maskPage3Index0 
+{
+    mask-size: 50% 70%;
+    mask-position: 10% -10%;
+}
+.gradientPage3Index0 
+{
+    background-size: 50% 70%;
+    background-position: 10% -10%;
+}
+
+.maskPage3Index1 
+{
+    mask-size: 70% 45%;
+    mask-position: 117% 78%;
+}
+.gradientPage3Index1 
+{
+    background-size: 70% 45%;
+    background-position: 117% 78%;
+}
+
+.openAni3Index0 {
+    mask-size: 50% 70%;
+    mask-position: 10% -10%;
+    background-size: 50% 70%;
+    background-position: 10% -10%;
+
+    animation: openPage3Ani0 2s forwards;
+}
+.openAni3Index1 {
+    animation: openPage3Ani1 2s forwards;
+}
+.closeAni3Index0 {
+    animation: closePage3Ani0 2s forwards;
+}
+.closeAni3Index1 {
+    animation: closePage3Ani1 2s forwards;
+}
+
+@keyframes openPage3Ani0 {
+    0% {
+        mask-size: 0% 0%;
+        mask-position: 30% 50%;
+        
+        background-size: 0% 0%;
+        background-position: 30% 50%;
+    }
+    100% {
+        mask-size: 50% 70%;
+        mask-position: 10% -10%;
+
+        background-size: 50% 70%;
+        background-position: 10% -10%;
+    }
+}
+@keyframes openPage3Ani1 {
+    0% {
+        mask-size: 0% 0%;
+        mask-position: 75% 70%;
+
+        background-size: 0% 0%;
+        background-position: 75% 70%;
+    }
+    100% {
+        mask-size: 70% 45%;
+        mask-position: 117% 78%;
+
+        background-size: 70% 45%;
+        background-position: 117% 78%;
+    }
+}
+@keyframes closePage3Ani0 {
+    0% {
+        mask-size: 50% 70%;
+        mask-position: 10% -10%;
+
+        background-size: 50% 70%;
+        background-position: 10% -10%;
+    }
+    100% {
+        mask-size: 0% 0%;
+        mask-position: 30% 50%;
+
+        background-size: 0% 0%;
+        background-position: 30% 50%;
+    }
+}
+@keyframes closePage3Ani1 {
+    0% {
+        mask-size: 70% 45%;
+        mask-position: 117% 78%;
+
+        background-size: 70% 45%;
+        background-position: 117% 78%;
+    }
+    100% {
+        mask-size: 0% 0%;
+        mask-position: 75% 70%;
+
+        background-size: 0% 0%;
+        background-position: 75% 70%;
+    }
+}
+
+/* 4 */
+.maskPage9Index0 
+{
+    mask-size: 50% 45%;
+    mask-position: 100% 50%;
+}
+.gradientPage9Index0 
+{
+    background-size: 50% 45%;
+    background-position: 100% 50%;
+}
+.maskPage9Index1 
+{
+    mask-size: 50% 45%;
+    mask-position: 0% 50%;
+}
+.gradientPage9Index1 
+{
+    background-size: 50% 45%;
+    background-position: 0% 50%;
+}
+
+.openAni4Index0 {
+    animation: openPage9Ani0 2s forwards;
+}
+.openAni4Index1 {
+    animation: openPage9Ani1 2s forwards;
+}
+.closeAni4Index0 {
+    animation: closePage9Ani0 2s forwards;
+}
+.closeAni4Index1 {
+    animation: closePage9Ani1 2s forwards;
+}
+
+@keyframes openPage9Ani0 {
+    0% {
+        mask-size: 0% 0%;
+        mask-position: 75% 60%;
+
+        background-size: 0% 0%;
+        background-position: 75% 60%;
+    }
+    100% {
+        mask-size: 50% 45%;
+        mask-position: 100% 50%;
+
+        background-size: 50% 45%;
+        background-position: 100% 50%;
+    }
+}
+@keyframes openPage9Ani1 {
+    0% {
+        mask-size: 0% 0%;
+        mask-position: 25% 60%;
+
+        background-size: 0% 0%;
+        background-position: 25% 60%;
+    }
+    100% {
+        mask-size: 50% 45%;
+        mask-position: 0% 50%;
+
+        background-size: 50% 45%;
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes closePage9Ani0 {
+    0% {
+        mask-size: 50% 45%;
+        mask-position: 100% 50%;
+
+        background-size: 50% 45%;
+        background-position: 100% 50%;
+    }
+    100% {
+        mask-size: 0% 0%;
+        mask-position: 75% 60%;
+
+        background-size: 0% 0%;
+        background-position: 75% 60%;
+    }
+}
+@keyframes closePage9Ani1 {
+    0% {
+        mask-size: 50% 45%;
+        mask-position: 0% 50%;
+
+        background-size: 50% 45%;
+        background-position: 0% 50%;
+    }
+    100% {
+        mask-size: 0% 0%;
+        mask-position: 25% 60%;
+
+        background-size: 0% 0%;
+        background-position: 25% 60%;
+    }
+}
+
+/* 6 */
+.maskPage13Index0, 
+.maskPage14Index0, 
+.maskPage15Index0, 
+.maskPage16Index0 
+{
+    mask-size: 100% 150%;
+    mask-position: 50% 25%;
+}
+.gradientPage13Index0, 
+.gradientPage14Index0, 
+.gradientPage15Index0, 
+.gradientPage16Index0
+{
+    background-size: 100% 150%;
+    background-position: 50% 25%;
+}
+
+.openAni6Index0 {
+    animation: openPage6Ani0 2s forwards;
+}
+.closeAni6Index0 {
+    animation: closePage6Ani0 2s forwards;
+}
+
+@keyframes openPage6Ani0 {
+    0% {
+        mask-size: 2% 2%;
+        mask-position: 50% 95%;
+
+        background-size: 2% 2%;
+        background-position: 50% 95%;
+    }
+    100% {
+        mask-size: 100% 150%;
+        mask-position: 50% 25%;
+
+        background-size: 100% 150%;
+        background-position: 50% 25%;
+    }
+}
+@keyframes closePage6Ani0 {
+    0% {
+        mask-size: 100% 150%;
+        mask-position: 50% 25%;
+
+        background-size: 100% 150%;
+        background-position: 50% 25%;
+    }
+    100% {
+        mask-size: 10% 10%;
+        mask-position: 50% 95%;
+
+        background-size: 10% 10%;
+        background-position: 50% 95%;
+    }
+}
+
+/* 7 */
+.maskPage18Index0 
+{
+    mask-size: 60% 90%;
+    mask-position: -24% -150%;
+}
+
+.gradientPage18Index0 
+{
+    background-size: 60% 90%;
+    background-position: -24% -150%;
+}
+
+.maskPage18Index1 
+{
+    mask-size: 60% 90%;
+    mask-position: 124% -150%;
+}
+
+.gradientPage18Index1 
+{
+    background-size: 60% 90%;
+    background-position: 124% -150%;
+}
+
+.maskPage18Index2 
+{
+    mask-size: 60% 90%;
+    mask-position: 0% 330%;
+}
+
+.gradientPage18Index2
+{
+    background-size: 60% 90%;
+    background-position: 0% 330%;
+}
+
+.maskPage18Index3
+{
+    mask-size: 60% 90%;
+    mask-position: 100% 330%;
+}
+
+.gradientPage18Index3
+{
+    background-size: 60% 90%;
+    background-position: 100% 330%;
+}
+
+/* 8 */
+.maskPage24Index0 
+{
+    mask-size: 60% 50%;
+    mask-position: 110% 30%;
+}
+.gradientPage24Index0
+{
+    background-size: 80% 60%;
+    background-position: 175% 25%;
+}
+.maskPage24Index1 
+{
+    mask-size: 60% 50%;
+    mask-position: -10% 80%;
+}
+.gradientPage24Index1
+{
+    background-size: 80% 60%;
+    background-position: -75% 90%;
+}
+
+.openAni8Index0 {
+    animation: openPage24Ani0 3s forwards;
+}
+.openAni8Index1 {
+    animation: openPage24Ani1 3s forwards;
+}
+.closeAni8Index0 {
+    animation: closePage24Ani0 3s forwards;
+}
+.closeAni8Index1 {
+    animation: closePage24Ani1 3s forwards;
+}
+
+@keyframes openPage24Ani0 {
+    0% {
+        mask-size: 0% 0%;
+        mask-position: 85% 40%;
+
+        background-size: 0% 0%;
+        background-position: 85% 40%;
+    }
+    30% {
+        mask-position: 90% 40%;
+        background-position: 90% 40%;
+    }
+    100% {
+        mask-size: 60% 50%;
+        mask-position: 110% 30%;
+
+        background-size: 80% 60%;
+        background-position: 175% 25%;
+    }
+}
+@keyframes openPage24Ani1 {
+    0% {
+        mask-size: 0% 0%;
+        mask-position: 10% 75%;
+
+        background-size: 0% 0%;
+        background-position: 10% 75%;
+    }
+    30% {
+        mask-position: 0% 75%;
+        background-position: 0% 75%;
+    }
+    100% {
+        mask-size: 60% 50%;
+        mask-position: -10% 80%;
+
+        background-size: 80% 60%;
+        background-position: -75% 90%;
+    }
+}
+
+@keyframes closePage24Ani0 {
+    0% {
+        mask-size: 60% 50%;
+        mask-position: 110% 30%;
+
+        background-size: 80% 60%;
+        background-position: 175% 25%;
+    }
+    100% {
+        mask-size: 0% 0%;
+        mask-position: 85% 40%;
+
+        background-size: 0% 0%;
+        background-position: 85% 40%;
+    }
+}
+@keyframes closePage24Ani1 {
+    0% {
+        mask-size: 60% 50%;
+        mask-position: -10% 80%;
+
+        background-size: 80% 60%;
+        background-position: -75% 90%;
+    }
+    100% {
+        mask-size: 0% 0%;
+        mask-position: 10% 75%;
+
+        background-size: 0% 0%;
+        background-position: 10% 75%;
+    }
+}

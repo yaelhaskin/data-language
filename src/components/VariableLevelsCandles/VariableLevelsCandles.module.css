@@ -1,0 +1,357 @@
+.VariableLevelsCandles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(../../assets/images/SVG/plain-background.svg);
+    direction: rtl;
+    cursor: url(../../assets/images/SVG/candles/candle-mouse.svg) , auto;
+}
+
+.mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    mask-image: radial-gradient(ellipse , rgba(219, 159, 99, 0.858) 30%, rgba(0, 0, 0, 0) 60%);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+}
+
+.mask0 {
+    mask-size: 50% 50%;
+    mask-position: 20% 110%;
+}
+
+.mask1 {
+    mask-size: 65% 60%;
+    mask-position: 110% 85%;
+}
+
+.mask2 {
+    mask-size: 50% 40%;
+    mask-position: -10% 33%;
+}
+
+.mask3 {
+    mask-size: 55% 75%;
+    mask-position: 125% -40%;
+}
+
+.gradient {
+    position: absolute;
+    background: radial-gradient(ellipse , rgba(219, 159, 99, 0.858) 30%, rgba(0, 0, 0, 0) 40%);
+    width: 100%;
+    height: 100%;
+}
+
+.gradient0 {
+    background-size: 50% 50%;
+    background-position: 20% 110%;
+    background-repeat: no-repeat;
+}
+
+.gradient1 {
+    background-size: 65% 60%;
+    background-position: 110% 85%;
+    background-repeat: no-repeat;
+}
+
+.gradient2 {
+    background-size: 50% 40%;
+    background-position: -10% 33%;
+    background-repeat: no-repeat;
+}
+
+.gradient3 {
+    background-size: 55% 75%;
+    background-position: 125% -40%;
+    background-repeat: no-repeat;
+}
+
+.title {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-family: Rubik-Light;
+    color: #e0a86f;
+}
+
+.text {
+    position: absolute;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: Rubik-Bold;
+    line-height: 2;
+    white-space: break-spaces;
+    padding: 20px;
+    border-radius: 15px;
+    color: #38281a;
+    z-index: 9;
+}
+
+.subtitle {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-family: Rubik-Light;
+    color: #e0a86f;
+}
+
+.title0 {
+    top: 76%;
+    left: 28%;
+}
+
+.title1 {
+    top: 60%;
+    left: 63%;
+}
+
+.title2 {
+    top: 36%;
+    left: 12%;
+}
+
+.title3 {
+    top: 24%;
+    left: 78%;
+}
+
+.candle {
+    position: absolute;
+    width: 6%;
+    z-index: 10;
+}
+
+.candle0 {
+    top: 80%;
+    left: 32%;
+}
+
+.candle1 {
+    top: 67%;
+    left: 67%;
+}
+
+.candle2 {
+    top: 40%;
+    left: 17%;
+}
+
+.candle3 {
+    top: 33%;
+    left: 82%;
+}
+
+.wholeCandle {
+    opacity: 0;
+    z-index: 5;
+}
+
+.maskAni {
+    animation: maskAnimation 3s forwards;
+}
+
+@keyframes maskAnimation {
+    100% {
+        mask-position: 50% 150%;
+        mask-size: 75% 90%;
+    }
+}
+
+.gradientAni0 {
+    animation: gradientAnimation0 3s forwards;
+}
+.gradientAni1 {
+    animation: gradientAnimation1 3s forwards;
+}
+.gradientAni2 {
+    animation: gradientAnimation2 3s forwards;
+}
+.gradientAni3 {
+    animation: gradientAnimation3 3s forwards;
+}
+
+@keyframes gradientAnimation0 {
+    100% {
+        background-position: 50% 130%;
+    }
+}
+@keyframes gradientAnimation1 {
+    100% {
+        background-position: 50% 190%;
+        background-size: 60% 80%;
+    }
+}
+@keyframes gradientAnimation2 {
+    100% {
+        background-position: 50% -100%;
+        background-size: 80% 110%;
+    }
+}
+@keyframes gradientAnimation3 {
+    100% {
+        background-position: 200% 20%;
+        background-size: 100% 150%;
+    }
+}
+
+.afterGradientAni {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: #38281a;
+    background-image: radial-gradient(ellipse , rgba(219, 159, 99, 0.858) 50%, rgba(0, 0, 0, 0) 85%);
+    background-size: 100% 100%;
+}
+
+.afterAni0 {
+    top: 70%;
+    width: 17%;
+    height: 21%;
+    z-index: 4;
+}
+.afterAni1 {
+    top: 58%;
+    width: 26%;
+    height: 33%;
+    z-index: 3;
+}
+.afterAni2 {
+    top: 46%;
+    width: 34%;
+    height: 45%;
+    z-index: 2;
+}
+.afterAni3 {
+    top: 32%;
+    width: 42%;
+    height: 60%;
+    z-index: 1;
+}
+.afterAni4 {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse , rgba(219, 159, 99, 0.858) 30%, rgba(0, 0, 0, 0) 40%);
+    background-position: 20% 20%;
+    background-size: 100% 130%;
+    background-repeat: no-repeat;
+}
+
+.candleAni0 {
+    animation: candleAnimation0 3s forwards;
+}
+.candleAni1 {
+    animation: candleAnimation1 3s forwards;
+}
+.candleAni2 {
+    animation: candleAnimation2 3s forwards;
+}
+.candleAni3 {
+    animation: candleAnimation3 3s forwards;
+}
+
+@keyframes candleAnimation0 {
+    100% {
+        top: 90%;
+        left: 42%;
+        transform: translate(-50%, -50%);
+    }
+}
+@keyframes candleAnimation1 {
+    100% {
+        top: 90%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+    }
+}
+@keyframes candleAnimation2 {
+    100% {
+        top: 93%;
+        left: 47%;
+        transform: translate(-50%, -50%);
+    }
+}
+@keyframes candleAnimation3 {
+    100% {
+        top: 90%;
+        left: 57%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.textAni0 {
+    animation: textAnimation0 3s forwards;
+}
+.textAni1 {
+    animation: textAnimation1 3s forwards;
+}
+.textAni2 {
+    animation: textAnimation2 3s forwards;
+}
+.textAni3 {
+    animation: textAnimation3 3s forwards;
+}
+
+@keyframes textAnimation0 {
+    100% {
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+@keyframes textAnimation1 {
+    100% {
+        top: 66%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+@keyframes textAnimation2 {
+    100% {
+        top: 54%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+@keyframes textAnimation3 {
+    100% {
+        top: 43%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.nextPage {
+    animation: nextPageAni 2s forwards;
+}
+
+@keyframes nextPageAni {
+    0% {
+        background-position: 200% 20%;
+        background-size: 100% 150%;
+
+        mask-position: 50% 50%;
+        mask-size: 55% 75%;
+    }
+    30%{
+        background-position: 50% 75%;
+        mask-position: 50% 75%;
+    }
+    60%{
+        background-position: 50% 75%;
+        mask-position: 50% 75%;
+    }
+    100% {
+        background-position: 50% 90%;
+        background-size: 30% 10%;
+
+        mask-position: 50% 90%;
+        mask-size: 0% 0%;
+    }
+}

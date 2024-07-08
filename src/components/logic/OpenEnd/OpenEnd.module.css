@@ -1,0 +1,90 @@
+.OpenEnd {
+    width: 100%; 
+}
+
+.title {
+    color: #38281a;
+    font-size: 1.5rem;
+    font-family: Rubik-Regular;
+    line-height: 2;
+    white-space: break-spaces;
+}
+
+.formContainer {
+    display: flex;
+    align-items: center;
+}
+
+.iconContainer {
+    height: 60%;
+    align-self: flex-end;
+}
+
+.indicationIcon {
+    width: 25px;
+}
+
+.indicationIconמ {
+    margin: 0 0 100% 0;
+}
+
+.indicationIconח {
+    margin: 0 0 100% 0;
+}
+
+.indicationIconל {
+    margin: 0 0 100% 0;
+}
+
+.indicationIconת {
+    margin: 70% 0;
+}
+
+.indicationIconש {
+    margin: 30% 3%;
+}
+
+
+input {
+    width: 50%;
+    height: 40px;
+    border-radius: 15px;
+    border: solid 2px #38281a;
+    background-color: #996c485d;
+    margin: 20px 0px;
+    font-family: Rubik-Regular;
+    font-size: 1rem;
+}
+
+input:focus {
+    border: solid 3px #38281a;
+    outline: none;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.769);
+    font-family: Rubik-Light;
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+.checkBtn {
+    width: 15%;
+    height: 35px;
+    margin: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #996d48;
+    box-shadow: 4px 4px 10px 2px #38281a;
+}
+
+.checkBtn:hover {
+    cursor: pointer;
+}
+
+.white {
+    color: white;
+    font-size: 1.3rem;
+    font-family: Rubik-Light;
+}
+

@@ -1,0 +1,388 @@
+.Opening {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #c5d6dd;
+    overflow: hidden;
+}
+
+.logo {
+    position: absolute;
+    width: 10%;
+    margin: 20px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.header-container {
+    position: absolute;
+    right: 0;
+    margin: 10% 3%;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    font-size: 5.5rem;
+    text-align: center;
+    font-family: Rubik-Bold;
+    margin-bottom: 8%;
+}
+
+.start-btn {
+    width: 20%;
+    height: 12%;
+    background-color: #a1b2af;
+    border: none;
+    box-shadow: 2px 5px 15px 2px #414141;
+    border-radius: 25px;
+    color: white;
+    font-size: 1.5rem;
+    font-family: Rubik-Regular;
+}
+
+.start-btn:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+    .pyramid-container-before {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        width: 60%;
+        height: 40%;
+    }
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1500px) {
+    .pyramid-container-before {
+        position: absolute;
+        top: 28%;
+        left: 0;
+        width: 60%;
+        height: 45%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .pyramid-container-before {
+        position: absolute;
+        top: 20%;
+        left: 2%;
+        width: 60%;
+        height: 55%;
+    }
+}
+
+.pyramid1-before {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+}
+
+.pyramid2-before {
+    position: absolute;
+    bottom: -20%;
+    left: -10%;
+    width: 65%;
+}
+
+.pyramid3-before {
+    position: absolute;
+    bottom: -10%;
+    left: 60%;
+    width: 50%;
+}
+
+@media screen and (max-width: 1150px) {
+    .pyramid-container-after {
+        position: absolute;
+        top: -30%;
+        left: -25%;
+        width: 150%;
+        height: 100%;
+    
+        animation-name: pyramid-container0;
+        animation-duration: 4s;
+    }
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1500px) {
+    .pyramid-container-after {
+        position: absolute;
+        top: 28%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    
+        animation-name: pyramid-container1;
+        animation-duration: 4s;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .pyramid-container-after {
+        position: absolute;
+        top: 20%;
+        left: 2%;
+        width: 100%;
+        height: 100%;
+    
+        animation-name: pyramid-container2;
+        animation-duration: 4s;
+    }
+}
+
+@keyframes pyramid-container0 {
+    from {width: 60%; height: 40%; top: 30%; left: 0;}
+    to {width: 150%; height: 100%; top: -30%; left: -25%;}
+}  
+@keyframes pyramid-container1 {
+    from {width: 60%; height: 45%;}
+    to {width: 100%; height: 100%;}
+}  
+@keyframes pyramid-container2 {
+    from {width: 60%; height: 55%;}
+    to {width: 100%; height: 100%;}
+}  
+
+@media screen and (min-width: 1150px) and (max-width: 1500px) {
+    .pyramid1-after {
+        position: absolute;
+        top: -90%;
+        left: -45%;
+        width: 160%;
+    
+        animation-name: pyramid11;
+        animation-duration: 4s;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .pyramid1-after {
+        position: absolute;
+        top: -102%;
+        left: -35%;
+        width: 150%;
+    
+        animation-name: pyramid12;
+        animation-duration: 4s;
+    }
+}
+
+@keyframes pyramid11 {
+    from {width: 80%; left: 10%; top: 0;}
+    to {width: 160%; left: -45%; top: -90%;}
+}  
+
+@keyframes pyramid12 {
+    from {width: 80%; left: 10%; top: 0;}
+    to {width: 150%; left: -35%; top: -102%;}
+}  
+
+.pyramid2-after {
+    position: absolute;
+    bottom: -20%;
+    left: -50%;
+    width: 65%;
+
+    animation-name: pyramid2;
+    animation-duration: 4s;
+}
+
+@keyframes pyramid2 {
+    from {left: -10%;}
+    to {left: -50%; display: none;}
+}  
+
+.pyramid3-after {
+    position: absolute;
+    bottom: -10%;
+    left: 90%;
+    width: 50%;
+
+    animation-name: pyramid3;
+    animation-duration: 4s;
+}
+
+@keyframes pyramid3 {
+    from {left: 60%;}
+    to {left: 90%; display: none;}
+}  
+
+.ground {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    background-color: #f7cea2;
+}
+
+.SubOpening {
+    opacity: 100%;
+
+    animation-name: sub-opening;
+    animation-duration: 8s;
+}
+
+@keyframes sub-opening {
+    0% {opacity: 0%;}
+    50% {opacity: 0%;}
+    100% {opacity: 100%;}
+}  
+
+.text-container {
+    position: absolute;
+    top: 18%;
+    left: 0%;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.text {
+    font-size: 1.8rem;
+    font-family: Rubik-Light;
+    margin-bottom: 50px;
+}
+
+.text2 {
+    margin-right: 100px;
+}
+
+.text3 {
+    margin-right: 200px;
+}
+
+@media screen and (max-width: 1150px) {
+    .text-container {
+        position: absolute;
+        top: 18%;
+        left: 7%;
+        width: 80%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .text {
+        font-size: 1.5rem;
+        font-family: Rubik-Light;
+        margin-bottom: 50px;
+    }
+}
+
+.pyramid-door {
+    position: absolute;
+    top: 59%;
+    left: 35%;
+    width: 20%;
+    z-index: 2;
+}
+
+.pyramidDoorTrue:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+    .text4 {
+        position: absolute;
+        top: 61.5%;
+        left: 36%;
+        z-index: 2;
+        font-size: 0.9rem;
+        font-family: Rubik-Regular;
+    }
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1500px) {
+    .text4 {
+        position: absolute;
+        top: 62%;
+        left: 37%;
+        width: 25%;
+        height: 4%;
+        z-index: 2;
+        font-size: 1rem;
+        font-family: Rubik-Regular;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .text4 {
+        position: absolute;
+        top: 63%;
+        left: 39%;
+        width: 25%;
+        height: 4%;
+        z-index: 2;
+        font-size: 1rem;
+        font-family: Rubik-Regular;
+    }
+}
+
+.pyramidSide {
+    animation: pyramidSize 2.2s forwards;
+}
+
+@keyframes pyramidSize {
+    0% {
+        top: -90%;
+        left: -45%; 
+        width: 160%; 
+    }
+    100% {
+        top: -700%;
+        left: -400%; 
+        width: 1000%; 
+    }
+} 
+
+.tunnel {
+    animation: tunnelSize 4s forwards;
+}
+
+@keyframes tunnelSize {
+    0% {
+        top: 59%;
+        left: 35%;
+        width: 20%;
+    }
+    100% {
+        top: -300%;
+        left: -250%;
+        width: 600%;
+    }
+} 
+
+.blackScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #38281a;
+    animation: blackScreenAni 4s forwards;
+    animation-delay: 2s;
+    z-index: 5;
+}
+
+@keyframes blackScreenAni {
+    0% {
+        width: 0%;
+        height: 0%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+} 

@@ -1,0 +1,135 @@
+.OneText {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    width: 50%;
+    margin: 1%;
+    color: #38281a;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Rubik-Light;
+    line-height: 2;
+    white-space: break-spaces;
+    z-index: 1;
+}
+
+.title {
+    font-size: 3rem;
+    font-family: Rubik-Light;
+}
+
+.titleAbsolute {
+    position: absolute;
+    top: 5%;
+}
+
+.textMarginTop {
+    margin-top: 10%;
+}
+
+.subtitle {
+    font-size: 1.7rem;
+    font-family: Rubik-Bold;
+}
+
+.brownColor {
+    color: #38281a;
+}
+
+.yellowColor {
+    color: #db9f63;
+}
+
+.hide {
+    display: none;
+}
+
+/* variable types */
+.arrow {
+    position: absolute;
+    top: 0.2%;
+    right: 0.2%;
+    width: 7%;
+    height: 35px;
+    margin: 30px;
+    padding-left: 30px;
+
+    background-image: url(../../assets/images/SVG/arrow.svg);
+    background-repeat: no-repeat;
+    
+    display: flex;
+    align-items: center;
+    
+    color: white;
+    font-size: 1.5rem;
+    font-family: Rubik-Light;
+
+    z-index: 1;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.back {
+    transform: rotate(180deg);
+}
+
+.back > * {
+    transform: rotate(180deg);
+}
+
+/* variable levels */
+
+.VLtext{
+    width: 40%;
+}
+
+.candle {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 7%;
+    z-index: 5;
+}
+
+.smallGradient {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: #38281a;
+    background-image: radial-gradient(ellipse , rgba(219, 159, 99, 0.858) 50%, rgba(0, 0, 0, 0) 75%);
+    background-size: 100% 100%;
+}
+
+.gradient13 {
+    top: 88%;
+    width: 8%;
+    height: 8%;
+    z-index: 4;
+}
+
+.gradient14 {
+    top: 84%;
+    width: 12%;
+    height: 12%;
+    z-index: 3;
+}
+
+.gradient15 {
+    top: 80%;
+    width: 16%;
+    height: 16%;
+    z-index: 2;
+}

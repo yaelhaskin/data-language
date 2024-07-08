@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Rubik-Black;
+    src: url(../src/assets/fonts/Rubik/static/Rubik-Black.ttf);
+}
+@font-face {
+    font-family: Rubik-BlackItalic;
+    src: url(../src/assets/fonts/Rubik/static/Rubik-BlackItalic.ttf);
+}
+@font-face {
+    font-family: Rubik-Bold;
+    src: url(../src/assets/fonts/Rubik/static/Rubik-Bold.ttf);
+}
+@font-face {
+    font-family: Rubik-BoldItalic;
+    src: url(../src/assets/fonts/Rubik/static/Rubik-BoldItalic.ttf);
+}
+@font-face {
+    font-family: Rubik-ExtraBold;
+    src: url(../src/assets/fonts/Rubik/static/Rubik-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Rubik-ExtraBoldItalic;
+    src: url(../src/assets/fonts/Rubik/static/Rubik-ExtraBoldItalic.ttf);
+}
+@font-face {
+    font-family: Rubik-Italic;
+    src: url(../src/assets/fonts/Rubik/static/Rubik-Italic.ttf);
+}
+@font-face {
+    font-family: Rubik-Light;
+    src: url(../src/assets/fonts/Rubik/static/Rubik-Light.ttf);
+}
+@font-face {
+    font-family: Rubik-LightItalic;
+    src: url(../src/assets/fonts/Rubik/static/Rubik-LightItalic.ttf);
+}
+@font-face {
+    font-family: Rubik-Medium;
+    src: url(../src/assets/fonts/Rubik/static/Rubik-Medium.ttf);
+}
+@font-face {
+    font-family: Rubik-MediumItalic;
+    src: url(../src/assets/fonts/Rubik/static/Rubik-MediumItalic.ttf);
+}
+@font-face {
+    font-family: Rubik-Regular;
+    src: url(../src/assets/fonts/Rubik/static/Rubik-Regular.ttf);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}

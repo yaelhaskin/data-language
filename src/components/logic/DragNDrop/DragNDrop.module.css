@@ -1,0 +1,165 @@
+.DragNDrop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 1.5rem;
+    font-family: Rubik-Regular;
+    line-height: 2;
+    white-space: break-spaces;
+    z-index: 1;
+}
+
+.brown {
+    color: #38281a;
+}
+
+.yellow {
+    color: #db9f63;
+}
+
+.white {
+    color: white;
+    font-size: 1.5rem;
+    font-family: Rubik-Regular;
+}
+
+.center {
+    text-align: center;
+}
+
+.title {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-family: Rubik-Regular;
+    line-height: 2;
+    white-space: break-spaces;
+}
+
+.subtitle {
+    width: 20%;
+    font-size: 1.2rem;
+}
+
+.columnElementsContainer {
+    width: 70%;
+    display: flex;
+}
+
+.dropContainer {
+    text-align: center;
+    padding: 30px;
+    width: 70%;
+    height: 300px;
+    font-family: RubiK-Bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basketsContainer {
+    position: absolute;
+    margin: 30px;
+    width: 20%;
+    height: 40%;
+    font-family: RubiK-Bold;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.basket0 {
+    top: 8%;
+    left: 68%;
+    background-image: url(../../../assets/images/SVG/baskets/basket-נומינלי.svg);
+}
+.basket1 {
+    top: 8%;
+    left: 9%;
+    background-image: url(../../../assets/images/SVG/baskets/basket-אורדינלי.svg);
+}
+.basket2 {
+    top: 56%;
+    left: 58%;
+    background-image: url(../../../assets/images/SVG/baskets/basket-אינטרוולי.svg);
+}
+.basket3 {
+    top: 56%;
+    left: 18%;
+    background-image: url(../../../assets/images/SVG/baskets/basket-יחסי.svg);
+}
+
+.termsStartContainer {
+    width: 70%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.variable {
+    width: 20%;
+    max-width: 20%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    border: solid 2px #38281a;
+    background-color: transparent;
+    color: 38281a;
+    font-size: 1.3rem;
+    font-family: Rubik-Regular;
+    cursor: grab;
+    z-index: 1;
+}
+
+.variBaskets {
+    padding: 2px 7px;
+    margin: 3px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: grab;
+}
+
+.isOver {
+    border: solid 2px #38281a;
+    border-radius: 15px;
+}
+
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+
+.checkBtn {
+    width: 10%;
+    height: 35px;
+    margin: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #996d48;
+    box-shadow: 4px 4px 10px 2px #38281a;
+}
+
+.checkBtn:hover {
+    cursor: pointer;
+}
+
+.explanation {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    font-family: Rubik-Light;
+    line-height: 2;
+    white-space: break-spaces;
+    z-index: 1;
+}
